@@ -1,0 +1,43 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 300vh;
+    background: url(images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+section .side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section .side#side1 {
+    background: black;
+    clip-path: polygon(0 100%, 0 100%, 62% 51%, 0 0, 0 3%);
+}
+
+section .side#side2 {
+    border-top: 35vh teal solid;
+    border-bottom: 35vh teal solid;
+    background: rgb(255, 219, 17);
+    clip-path: polygon(100% 100%, 0 100%, 40% 51%, 0 0, 100% 0);
+} 
